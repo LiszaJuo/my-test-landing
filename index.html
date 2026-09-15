@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenBite — доставка полезной еды</title>
+    <meta
+      name="description"
+      content="GreenBite — свежие рационы, сбалансированное меню и доставка полезной еды на дом."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Размытый фон: длинный стол с тарелками, закусками и напитками -->
+    <div class="site-bg" aria-hidden="true"></div>
+
+    <!-- Шапка сайта с навигацией -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#hero" aria-label="GreenBite на главную">
+          <span class="logo__mark" aria-hidden="true"></span>
+          GreenBite
+        </a>
+        <!-- Чекбокс управляет мобильным меню без JavaScript -->
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-toggle-label" for="nav-toggle">
+          <span class="visually-hidden">Открыть меню</span>
+          <span></span>
+        </label>
+        <nav class="nav" aria-label="Основная навигация">
+          <a href="#benefits">Преимущества</a>
+          <a href="#menu">Меню</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#contact">Связаться</a>
+        </nav>
+        <a class="btn btn--small header__cta" href="#contact">Заказать рацион</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Первый экран -->
+      <section class="hero" id="hero">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Доставка за 45 минут</p>
+            <h1>Полезная еда, которая нравится каждый день</h1>
+            <p class="hero__lead">
+              Сбалансированные рационы из сезонных продуктов. Без лишнего сахара,
+              с прозрачным КБЖУ и вкусом, который хочется повторять.
+            </p>
+            <div class="hero__actions">
+              <a class="btn" href="#contact">Подобрать меню</a>
+              <a class="btn btn--ghost" href="#menu">Смотреть блюда</a>
+            </div>
+            <ul class="hero__stats">
+              <li>
+                <strong>12к+</strong>
+                <span>довольных клиентов</span>
+              </li>
+              <li>
+                <strong>40 мин</strong>
+                <span>средняя доставка</span>
+              </li>
+              <li>
+                <strong>100%</strong>
+                <span>свежие продукты</span>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__visual">
+            <figure class="hero-card">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80"
+                alt="Яркий боул с овощами, авокадо и киноа"
+              />
+              <figcaption>
+                <span>Боул дня</span>
+                <b>Киноа, лосось и авокадо</b>
+              </figcaption>
+            </figure>
+            <div class="floating-card floating-card--top">
+              <span>Ккал</span>
+              <strong>520</strong>
+            </div>
+            <div class="floating-card floating-card--bottom">
+              <span>Белок</span>
+              <strong>32 г</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Преимущества сервиса -->
+      <section class="section" id="benefits">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">Почему GreenBite</p>
+            <h2>Еда, которая работает на вас</h2>
+            <p>
+              Мы готовим небольшими партиями, считаем нутриенты и доставляем
+              в удобных контейнерах, которые можно разогреть за минуту.
+            </p>
+          </div>
+          <div class="benefits">
+            <article class="benefit-card">
+              <div class="benefit-card__icon" aria-hidden="true">🥗</div>
+              <h3>Сбалансированные рационы</h3>
+              <p>
+                Меню собирают нутрициологи: белок, клетчатка и сложные
+                углеводы в каждой порции.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <div class="benefit-card__icon" aria-hidden="true">🌿</div>
+              <h3>Сезонные продукты</h3>
+              <p>
+                Овощи и зелень от локальных фермеров. Без заморозки и
+                полуфабрикатов сомнительного качества.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <div class="benefit-card__icon" aria-hidden="true">⚡</div>
+              <h3>Быстрая доставка</h3>
+              <p>
+                Курьеры привозят заказ тёплым в термосумках. Среднее время —
+                меньше часа.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <div class="benefit-card__icon" aria-hidden="true">♻️</div>
+              <h3>Экологичная упаковка</h3>
+              <p>
+                Контейнеры из перерабатываемых материалов. Можно вернуть
+                курьеру и получить бонусы.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Краткое меню -->
+      <section class="section section--alt" id="menu">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">Популярное</p>
+            <h2>Рационы на любой ритм</h2>
+            <p>Выберите программу — мы соберём набор на 5 или 7 дней.</p>
+          </div>
+          <div class="plans">
+            <article class="plan-card">
+              <p class="plan-card__tag">Лёгкий старт</p>
+              <h3>Balance</h3>
+              <p class="plan-card__price">от 1 490 ₽ <span>/ день</span></p>
+              <ul>
+                <li>1 800 ккал</li>
+                <li>3 приёма пищи</li>
+                <li>Без острого и жареного</li>
+              </ul>
+            </article>
+            <article class="plan-card plan-card--featured">
+              <p class="plan-card__tag">Хит недели</p>
+              <h3>Power</h3>
+              <p class="plan-card__price">от 1 890 ₽ <span>/ день</span></p>
+              <ul>
+                <li>2 400 ккал</li>
+                <li>4 приёма пищи</li>
+                <li>Больше белка для тренировок</li>
+              </ul>
+            </article>
+            <article class="plan-card">
+              <p class="plan-card__tag">Мягкий детокс</p>
+              <h3>Green</h3>
+              <p class="plan-card__price">от 1 690 ₽ <span>/ день</span></p>
+              <ul>
+                <li>1 500 ккал</li>
+                <li>Боулы и смузи</li>
+                <li>Больше овощей и зелени</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Галерея блюд -->
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">На кухне</p>
+            <h2>Как выглядит ваша тарелка</h2>
+            <p>Живые цвета, аккуратная подача и порции, которые насыщают.</p>
+          </div>
+          <div class="gallery">
+            <figure class="gallery__item gallery__item--wide">
+              <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80"
+                alt="Салат с зеленью, томатами и семенами"
+              />
+              <figcaption>Салат Harvest</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80"
+                alt="Лосось с овощами на тарелке"
+              />
+              <figcaption>Лосось с брокколи</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80"
+                alt="Завтрак с яйцами и овощами"
+              />
+              <figcaption>Завтрак Protein</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=800&q=80"
+                alt="Поке боул с авокадо и рисом"
+              />
+              <figcaption>Поке с тунцом</figcaption>
+            </figure>
+            <figure class="gallery__item gallery__item--tall">
+              <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                alt="Суп в керамической миске"
+              />
+              <figcaption>Крем-суп из тыквы</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Форма обратной связи -->
+      <section class="section section--contact" id="contact">
+        <div class="container contact">
+          <div class="contact__info">
+            <p class="eyebrow">Обратная связь</p>
+            <h2>Подберём рацион за один день</h2>
+            <p>
+              Оставьте контакты — нутрициолог напишет в мессенджер, уточнит
+              цели и пришлёт пробное меню.
+            </p>
+            <ul class="contact__list">
+              <li>Ответ в течение 15 минут в рабочее время</li>
+              <li>Пробный день со скидкой 30%</li>
+              <li>Можно отменить подписку в любой момент</li>
+            </ul>
+          </div>
+          <form class="form" action="#" method="post">
+            <label>
+              Имя
+              <input type="text" name="name" placeholder="Анна" required />
+            </label>
+            <label>
+              Телефон или email
+              <input
+                type="text"
+                name="contact"
+                placeholder="+7 900 000-00-00"
+                required
+              />
+            </label>
+            <label>
+              Какой рацион интересен
+              <select name="plan">
+                <option value="balance">Balance</option>
+                <option value="power">Power</option>
+                <option value="green">Green</option>
+                <option value="custom">Индивидуальный</option>
+              </select>
+            </label>
+            <label>
+              Комментарий
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Цели, аллергии, удобное время доставки"
+              ></textarea>
+            </label>
+            <button class="btn btn--full" type="submit">Отправить заявку</button>
+            <p class="form__note">
+              Нажимая кнопку, вы соглашаетесь на обработку персональных данных.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© 2026 GreenBite. Вымышленный сервис полезной еды.</p>
+        <p>Москва · ежедневно с 08:00 до 22:00</p>
+      </div>
+    </footer>
+
+    <!-- Параллакс: фон смещается медленнее, чем контент страницы -->
+    <script>
+      (function () {
+        var bg = document.querySelector(".site-bg");
+        if (!bg) return;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+        /* Фон проходит около 38% пути относительно прокрутки сайта */
+        var factor = 0.38;
+        var ticking = false;
+
+        function update() {
+          ticking = false;
+          var y = window.scrollY || 0;
+          var max = Math.max(
+            document.documentElement.scrollHeight - window.innerHeight,
+            0
+          );
+          bg.style.setProperty("--parallax", -y * factor + "px");
+          bg.style.setProperty("--bg-extra", max * factor + 40 + "px");
+        }
+
+        function onScroll() {
+          if (!ticking) {
+            ticking = true;
+            window.requestAnimationFrame(update);
+          }
+        }
+
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("resize", update);
+        update();
+      })();
+    </script>
+  </body>
+</html>
